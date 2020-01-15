@@ -61,7 +61,8 @@ Rails.application.configure do
 
   # config.action_mailer.default_url_options = { protocol: 'https', host: 'https://9fdb3d7e028443ef9abae2e5f0d2f43e.vfs.cloud9.ap-northeast-1.amazonaws.com/' }
   # config.action_mailer.default_url_options = { protocol: 'https', host: 'https://dackelteckelprofy.herokuapp.com/' }
-  config.action_mailer.default_url_options = { :host => 'https://dackelteckelprofy.herokuapp.com/' }
+  # config.action_mailer.default_url_options = { :host => 'https://dackelteckelprofy.herokuapp.com/' }
+  config.action_mailer.default_url_options = { host: "localhost", port: "5000" }
 
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
