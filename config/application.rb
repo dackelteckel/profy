@@ -15,5 +15,8 @@ module Profy
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+
+    # ActionView::Template::Error (Missing host to link to! Please provide the :host parameter, set default_url_options[:host], or set :only_path to true):
+    config.action_mailer.default_url_options = { host: 'https://dackelteckelprofy.herokuapp.com/' }
   end
 end
