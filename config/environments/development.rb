@@ -63,9 +63,10 @@ Rails.application.configure do
   # config.action_mailer.default_url_options = { protocol: 'https', host: 'https://dackelteckelprofy.herokuapp.com/' }
   # config.action_mailer.default_url_options = { protocol: 'https', host: "herokuapp.com" }
   # config.action_mailer.default_url_options = { :host => 'https://dackelteckelprofy.herokuapp.com/' }
-  config.action_mailer.default_url_options = { :host => 'https://106.168.195.18' }
+  config.action_mailer.default_url_options = { protocol: 'https', host: 'https://dackelteckelprofy.herokuapp.com' }
+  config.action_mailer.raise_delivery_errors = false　#この一文も追記!!
 
-  config.action_mailer.raise_delivery_errors = true
+  # config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :enable_starttls_auto => true,
